@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 20px;
+        }
+        .container-2{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            
+        }
+        .box{
+            background-color: slateblue;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .item{
+            height: 100px;
+            width: 200px;
+            border-radius: 20px;
+            background-color: antiquewhite;
+            text-align: center;
+            border: 3px red solid;
+            
+            
+        }
+        @media screen and (max-width:576px) {
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>fexible flex</h2>
+    <!-- parent of box class -->
+    <div class="container">  
+        <div class="box">
+            <h2>first box</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas eligendi, illum at laudantium vero quae
+                autem? Voluptates rerum, magni nesciunt mollitia blanditiis totam, illum corrupti dolorem a animi quia
+                tempore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ipsum eius in eligendi
+                obcaecati laudantium vel doloremque, rerum labore illo natus dolore. Deserunt magni possimus, iusto
+                corporis pariatur culpa eligendi?</p>
+        </div>
+        <div class="box">
+            <h2>second box</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas eligendi, illum at laudantium vero quae
+                autem? Voluptates rerum, magni nesciunt mollitia blanditiis totam, illum corrupti dolorem a animi quia
+                tempore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum odit nesciunt in, nam, deleniti
+                sunt consequatur a perspiciatis quia similique unde dolores amet. Quam quos officia, et nihil cumque
+                doloremque.</p>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+        <div class="item">item-6</div>
+        <div class="item">item-7</div>
+        <div class="item">item-8</div>
+        <div class="item">item-9</div>
+        <div class="item">item-10</div>
+        </div>
+    </div>
+</body>
+
+</html>
